@@ -1,0 +1,131 @@
+.mobileRoundOneContainer {
+    position: relative;
+    background: url("../../../assets/backgrounds/2.png") no-repeat center center;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    height: 90vh;
+    display: block;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 98%;
+}
+
+.mobileRoundTwoContainer {
+    position: relative;
+    background: url("../../../assets/backgrounds/3.png") no-repeat center center;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    height: 90vh;
+    display: block;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 98%;
+}
+
+.mobileRoundThreeContainer {
+    position: relative;
+    background: url("../../../assets/backgrounds/4.png") no-repeat center center;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    height: 90vh;
+    display: block;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 98%;
+}
+
+.mobileRoundFourContainer {
+    position: relative;
+    background: url("../../../assets/backgrounds/5.png") no-repeat center center;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    height: 90vh;
+    display: block;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 98%;
+}
+
+.mobileRoundFiveContainer {
+    position: relative;
+    background: url("../../../assets/backgrounds/6.png") no-repeat center center;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    height: 90vh;
+    display: block;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 98%;
+}
+
+.mobileHeader {
+    position: absolute;
+    top: -11px;
+    width: 100%;
+    text-align: center;
+}
+
+.mobileHeaderText {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    font-size: 12px;
+    display: inline-block;
+}
+
+.mobileLogo-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.mobileSmallLogo {
+    height: 100px;
+    width: 100px;
+}
+
+.mobileFooter {
+    position: absolute;
+    text-align: center;
+    bottom: 10px;
+    right: 20px;
+}
+
+.mobileNextButton {
+    background-color: black;
+    border: 2px solid rgba(211, 19, 5, 0.932);
+    color: white;
+    font-size: 15px;
+    height: 50px;
+    width: 120px;
+}

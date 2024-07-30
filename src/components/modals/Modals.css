@@ -1,0 +1,217 @@
+.modal {
+    --transform: translateY(-100vh);
+    --transition: transform .8s;
+    background-color: #111111bd;
+    bottom: 0;
+    display: flex;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: opacity .6s .9s;
+    z-index: 1 !important;
+}
+
+.modal.is-open {
+    --transform: translateY(0);
+    --transition: transform .8s .8s;
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+}
+
+.modal-container {
+    /* max-width: 450px; */
+    /* padding: 3em 2.5em; */
+    background: black;
+    border-radius: 20px;
+    border: 2px solid rgba(211, 19, 5, 0.932);
+    color: #fff;
+    display: grid;
+    gap: 1em;
+    grid-auto-columns: 100%;
+    height: auto;
+    margin: auto;
+    height: 500px;
+    width: 800px;
+    padding: 1em 1em;
+    place-items: center;
+    text-align: center;
+    transform: var(--transform);
+    transition: var(--transition);
+}
+
+.modalConfirm {
+    background-color: rgb(31, 202, 31);
+    border-radius: 6px;
+    border: 1px solid;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 300;
+    padding: 1em 3em;
+    text-decoration: none;
+    transition: background-color .3s;
+    width: 150px;
+} 
+
+.modalClose {
+    background-color: rgb(224, 11, 11);
+    border-radius: 6px;
+    border: 1px solid;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 300;
+    padding: 1em 3em;
+    text-decoration: none;
+    transition: background-color .3s;
+    width: 150px;
+} 
+
+.images {
+    border: 2px solid rgba(211, 19, 5, 0.932);
+    border-radius: 5px;
+    height: 160px;
+    width: 300px;
+}
+
+.titles {
+    color: rgba(211, 19, 5, 0.932);
+    font-size: 20px;
+    margin-bottom: -1px;
+    margin-left: 10px;
+    margin-top: -5px;
+    text-align: left;
+}
+
+.spinButton {
+    border: 2px solid rgba(211, 19, 5, 0.932);
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.balanceDiv {
+    background-color: black;
+    border: 2px solid rgba(211, 19, 5, 0.932);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: white;
+}
+
+.balanceInput {
+    background-color: black;
+    border: 2px solid rgba(211, 19, 5, 0.932);
+    border-radius: 5px;
+    color: white;
+    font-size: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+input[type=number].balanceInput::-webkit-inner-spin-button,
+input[type=number].balanceInput::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.leaderboardContainer {
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    margin-top: -100px;
+    width: 800px;
+}
+
+.leaderboardHeaders, .leaderboardRow {
+    display: flex;
+    font-size: 20px;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 5px;
+}
+
+.leaderboardHeaders p {
+    background-color: rgba(211, 19, 5, 0.932);
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+.leaderboardRow {
+    border: 2px solid rgba(211, 19, 5, 0.932);
+    border-radius: 5px;
+}
+
+.leaderboardHeaders p, .leaderboardRow p {
+    flex: 1;
+    text-align: center;
+}
+
+.balances {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -16px;
+}
+
+.active {
+    background-color: rgb(0, 219, 0);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 5px;
+}
+
+.inactive {
+    background-color: gray;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 5px;
+}
+
+.finishedContainer {
+    margin-top: -100px;
+    text-align: center;
+    width: 700px;
+}
+
+.trophyContainer {
+    background-color: rgba(211, 19, 5, 0.932);
+    border: 2px solid gray;
+    border-radius: 10px;
+    height: 250px;
+}
+
+.trophyImage {
+    height: 200px;
+    width: 400px;
+}
+
+.winner {
+    font-size: 50px;
+    margin-top: -40px;
+}
+
+.modalTitle {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: -10px;
+}
+
+.input-container {
+    position: relative;
+    display: inline-block;
+}
+
+.input-container::before {
+    content: '$';
+    font-size: 25px;
+    position: absolute;
+    left: 10px; 
+    top: 40%;
+    transform: translateY(-50%);
+    pointer-events: none; 
+}

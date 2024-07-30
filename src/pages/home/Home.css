@@ -1,0 +1,161 @@
+.backgroundContainer {
+    background: url("../../assets/backgrounds/1.png") no-repeat center;
+    background-size: 100% 100%;
+    display: block; 
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+  
+  .container {
+    /* border: green solid 5px;
+    border-radius: 10px; */
+    color: white;
+    /* margin-left: 20%; */
+    text-align: center;
+    /* width: 300px; */
+    display: flex;
+    min-height: 400px;
+    justify-content: center;
+  }
+  
+  .player {
+    align-items: center;
+    display: flex;
+    font-size: 25px;
+    height: 65px;
+    justify-content: space-around;
+    margin-left: 10px;
+    text-align: center;
+  }
+  
+  .playersContainer {
+    display: block;
+    /* margin-bottom: 10px; */
+    width: 400px;
+    max-height: 300px;
+  }
+  
+  .playerInput {
+    background-color: rgb(61, 61, 61);
+    border-radius: 5px;
+    color: white;
+    font-size: 25px;
+    width: 300px;
+  }
+  
+  .usedNameInput {
+    background-color: rgb(61, 61, 61);
+    border-radius: 5px;
+    color: red;
+    font-size: 25px;
+    width: 300px;
+  }
+  
+  .buttonsContainer {
+    margin-left: 100px;
+  }
+  
+  .addPlayerButton {
+    background-color: black;
+    border: rgba(211, 19, 5, 0.932) solid 3px;
+    color: white;
+    /* margin-bottom: 10px; */
+  }
+  
+  .playersTitle {
+    background-color: black;
+    border: rgba(211, 19, 5, 0.932) solid 3px;
+    border-top-left-radius: 5px;
+    font-size: 22px;
+    /* border-top-right-radius: 5px; */
+  }
+  
+  .optionsTitle {
+    background-color: black;
+    border-right: rgba(211, 19, 5, 0.932) solid 3px;
+    border-top: rgba(211, 19, 5, 0.932) solid 3px;
+    border-bottom: rgba(211, 19, 5, 0.932) solid 5px;
+    border-top-right-radius: 5px;
+    font-size: 22px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100px;
+  }
+  
+  .optionsList {
+    background-color: black;
+    border-right: rgba(211, 19, 5, 0.932) solid 3px;
+    border-bottom: rgba(211, 19, 5, 0.932) solid 3px;
+    border-bottom-right-radius: 5px;
+    flex: 1;
+    height: 48.3%;
+    max-height: 300px;
+  }
+  
+  .playersList {
+    background-color: black;
+    border: rgba(211, 19, 5, 0.932) solid 3px;
+    border-bottom-left-radius: 5px;
+    flex: 1;
+    height: 64%;
+  }
+  
+  .buttons {
+    background-color: black;
+    border: rgba(211, 19, 5, 0.932) solid 3px;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    height: 80px;
+    margin-bottom: 28px;
+    width: 350px;
+  }
+  
+  .playButton {
+    background-color: black;
+    border: rgba(211, 19, 5, 0.932) solid 3px;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    height: 80px;
+    margin-bottom: 28px;
+    width: 350px;
+  }
+  
+  .logo {
+    height: 220px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    width: 220px;
+  }
+  
+  .logoContainer {
+    text-align: center;
+  }
+
+  .slogan {
+    color: white;
+    font-size: 25px;
+    margin-top: -5px;
+    text-shadow: 
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; 
+  }
+
+  .disclaimer {
+    color: black;
+    font-size: 10px;
+    margin-top: -100px;
+    text-align: center;
+  }
+
+/* .mobileButton {
+  border: 2px solid rgb(0, 219, 0);
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  margin-top: 20px;
+} */

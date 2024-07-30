@@ -1,0 +1,222 @@
+.mobileModal {
+    --transform: translateY(-100vh);
+    --transition: transform .8s;
+    background-color: #111111bd;
+    bottom: 0;
+    display: flex;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: opacity .6s .9s;
+    z-index: 1 !important;
+}
+
+.mobileModal.is-open {
+    --transform: translateY(0);
+    --transition: transform .8s .8s;
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+}
+
+.mobileModal-container {
+    /* max-width: 450px; */
+    /* padding: 3em 2.5em; */
+    background: black;
+    border-radius: 20px;
+    border: 2px solid rgba(211, 19, 5, 0.932);
+    color: #fff;
+    display: grid;
+    gap: 1em;
+    grid-auto-columns: 100%;
+    height: auto;
+    margin: auto;
+    height: 300px;
+    width: 500px;
+    padding: 1em 1em;
+    place-items: center;
+    text-align: center;
+    transform: var(--transform);
+    transition: var(--transition);
+}
+
+.mobileModalConfirm {
+    background-color: rgb(31, 202, 31);
+    border-radius: 6px;
+    border: 1px solid;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 300;
+    padding: 1em 3em;
+    text-decoration: none;
+    transition: background-color .3s;
+    width: 150px;
+} 
+
+.mobileModalClose {
+    background-color: rgb(224, 11, 11);
+    border-radius: 6px;
+    border: 1px solid;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 300;
+    padding: 1em 3em;
+    text-decoration: none;
+    transition: background-color .3s;
+    width: 150px;
+} 
+
+.mobileImages {
+    border: 2px solid rgba(211, 19, 5, 0.932);
+    border-radius: 5px;
+    height: 80px;
+    width: 200px;
+}
+
+.mobileTitles {
+    color: rgba(211, 19, 5, 0.932);
+    font-size: 15px;
+    margin-bottom: -1px;
+    margin-left: 12px;
+    margin-top: -10px;
+    text-align: left;
+}
+
+.mobileSpinButton {
+    border: 2px solid rgba(211, 19, 5, 0.932);
+    border-radius: 10px;
+    color: white;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.mobileBalanceDiv {
+    background-color: black;
+    border: 2px solid green;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: white;
+}
+
+.mobileBalanceInput {
+    background-color: black;
+    border: 2px solid green;
+    border-radius: 5px;
+    color: white;
+    font-size: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+input[type=number].balanceInput::-webkit-inner-spin-button,
+input[type=number].balanceInput::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.mobileLeaderboardContainer {
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    margin-top: -30px;
+    width: 500px;
+}
+
+.mobileLeaderboardHeaders, .mobileLeaderboardRow {
+    display: flex;
+    font-size: 15px;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 3px;
+}
+
+.mobileLeaderboardHeaders p {
+    background-color: rgba(211, 19, 5, 0.932);
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+.mobileLeaderboardRow {
+    border: 2px solid rgba(211, 19, 5, 0.932);
+    border-radius: 5px;
+}
+
+.mobileLeaderboardHeaders p, .leaderboardRow p {
+    flex: 1;
+    text-align: center;
+}
+
+.mobileBalances {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -12px;
+    margin-top: -10px;
+}
+
+.mobileActive {
+    background-color: rgba(211, 19, 5, 0.932);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 10px;
+    padding: 5px;
+}
+
+.mobileInactive {
+    background-color: gray;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 10px;
+    padding: 5px;
+}
+
+.mobileFinishedContainer {
+    margin-top: -70px;
+    text-align: center;
+    width: 450px;
+}
+
+.mobileTrophyContainer {
+    background-color: rgba(211, 19, 5, 0.932);
+    border: 2px solid gray;
+    border-radius: 10px;
+    margin-top: -20px;
+    height: 160px;
+    width: 450px;
+}
+
+.mobileTrophyImage {
+    height: 125px;
+    width: 250px;
+}
+
+.mobileWinner {
+    font-size: 40px;
+    margin-top: -30px;
+}
+
+.mobileModalTitle {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: -10px;
+}
+
+.mobileInput-container {
+    position: relative;
+    display: inline-block;
+}
+
+.mobileInput-container::before {
+    content: '$';
+    font-size: 25px;
+    position: absolute;
+    left: 10px; 
+    top: 40%;
+    transform: translateY(-50%);
+    pointer-events: none; 
+}

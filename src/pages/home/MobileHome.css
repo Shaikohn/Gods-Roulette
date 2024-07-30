@@ -1,0 +1,147 @@
+.mobileBackgroundContainer {
+    background: url("../../assets/backgrounds/1.png") no-repeat center;
+    background-size: 100% 100%;
+    display: block; 
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.mobileContainer {
+    color: white;
+    text-align: center;
+    display: flex;
+    margin-top: -15px;
+    height: 300px;
+    justify-content: center;
+}
+
+.mobilePlayer {
+    align-items: center;
+    display: flex;
+    font-size: 15px;
+    height: 40px;
+    justify-content: space-around;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.mobilePlayersContainer {
+    display: block;
+    max-height: 300px;
+    width: 250px;
+}
+
+.mobilePlayerInput {
+    background-color: rgb(61, 61, 61);
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    width: 130px;
+}
+
+.mobileUsedNameInput {
+    background-color: rgb(61, 61, 61);
+    border-radius: 5px;
+    color: red;
+    font-size: 15px;
+    width: 130px;
+}
+
+.mobileButtonsContainer {
+    margin-left: 50px;
+}
+
+.mobileAddPlayerButton {
+    background-color: black;
+    border: rgba(211, 19, 5, 0.932) solid 3px;
+    color: white;
+    font-size: 15px;
+}
+
+.mobilePlayersTitle {
+    background-color: black;
+    border: rgba(211, 19, 5, 0.932) solid 3px;
+    border-top-left-radius: 5px;
+    height: 40px;
+    font-size: 13px;
+}
+
+.mobileOptionsTitle {
+    background-color: black;
+    border-right: rgba(211, 19, 5, 0.932) solid 3px;
+    border-top: rgba(211, 19, 5, 0.932) solid 3px;
+    border-bottom: rgba(211, 19, 5, 0.932) solid 5px;
+    border-top-right-radius: 5px;
+    font-size: 13px;
+    height: 40px;
+    width: 100px;
+}
+
+.mobileOptionsList {
+    background-color: black;
+    border-right: rgba(211, 19, 5, 0.932) solid 3px;
+    border-bottom: rgba(211, 19, 5, 0.932) solid 3px;
+    border-bottom-right-radius: 5px;
+    flex: 1;
+    height: 130px;
+}
+
+.mobilePlayersList {
+    background-color: black;
+    border: rgba(211, 19, 5, 0.932) solid 3px;
+    border-bottom-left-radius: 5px;
+    flex: 1;
+    height: 130px;
+}
+
+.mobileButtons {
+    background-color: black;
+    border: rgba(211, 19, 5, 0.932) solid 3px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    height: 50px;
+    margin-bottom: 15px;
+    width: 160px;
+}
+
+.mobilePlayButton {
+    background-color: black;
+    border: rgba(211, 19, 5, 0.932) solid 3px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    height: 50px;
+    margin-bottom: 15px;
+    width: 160px;
+}
+
+.mobileLogo {
+    height: 100px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 100px;
+}
+
+.mobileLogoContainer {
+    text-align: center;
+}
+
+.mobileSlogan {
+    color: white;
+    font-size: 15px;
+    margin-top: -15px;
+    text-shadow: 
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; 
+}
+
+.mobileDisclaimer {
+    color: black;
+    font-size: 10px;
+    margin-top: -120px;
+    text-align: center;
+}

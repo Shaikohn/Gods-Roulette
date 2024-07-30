@@ -1,0 +1,11 @@
+body {
+  /* background-image: url("./images/others/background5.jpeg"); */
+  background-color: black;
+  font-weight: bold;
+  /* background-repeat: no-repeat; */
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
