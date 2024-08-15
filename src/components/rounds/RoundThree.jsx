@@ -3,8 +3,8 @@ import { useModal } from '../modals/useModal'
 import Modals from '../modals/Modals'
 import './Rounds.css'
 import logo from '../../assets/Logo.png'
-import challengeIMG from '../../assets/Logo.png'
-import slotIMG from '../../assets/Logo.png'
+import jugadaIMG from '../../assets/jugada.png'
+import tiradaIMG from '../../assets/tiradas.png'
 import MobileRoundThree from './mobile/MobileRoundThree'
 
 const RoundThree = ({players, setPlayers, setRound}) => {
@@ -112,10 +112,10 @@ const RoundThree = ({players, setPlayers, setRound}) => {
           gamble === '' ?
           <div>
             <p className='modalTitle'>GIRA PARA OBTENER LA APUESTA!</p>
-            <p className='titles'>GAMBLE</p>
-            <img className='images' src={challengeIMG} alt='' />
-            <p className='titles'>ROUND</p>
-            <img className='images' src={slotIMG} alt='' />
+            <p className='titles'>JUGADA</p>
+            <img className='images' src={jugadaIMG} alt='' />
+            <p className='titles'>TIRADAS</p>
+            <img className='images' src={tiradaIMG} alt='' />
             <div style={{textAlign: 'center'}}>
               { spinning ?
               <button disabled className='spinButton'>CARGANDO</button> : <button onClick={() => spinGamblesAndRounds()} className='spinButton'>GIRAR</button>
@@ -127,9 +127,9 @@ const RoundThree = ({players, setPlayers, setRound}) => {
           gamble !== '' & spin ?
           <div>
             <p className='modalTitle'>OBTUVISTE TU APUESTA!</p>
-            <p className='titles'>GAMBLE</p>
+            <p className='titles'>JUGADA</p>
             <img className='images' src={gamble} alt='' />
-            <p className='titles'>ROUND</p>
+            <p className='titles'>TIRADAS</p>
             <img className='images' src={gambleRound} alt='' />
             <div style={{textAlign: 'center'}}>
               <button onClick={() => setSpin(false)} className='spinButton'>SIGUIENTE</button>
@@ -145,11 +145,11 @@ const RoundThree = ({players, setPlayers, setRound}) => {
                 <p className='modalTitle'>INGRESA TU BALANCE ANTES DE JUGAR!</p>
                 <div style={{ display: 'flex' }}>
               <div style={{ position: 'relative' }}>
-                <p className='titles' style={{marginLeft: '5px'}}>GAMBLE</p>
+                <p className='titles' style={{marginLeft: '5px'}}>JUGADA</p>
                 <img className='images' src={gamble} alt='' style={{margin: '5px'}} />
               </div>
               <div style={{ position: 'relative' }}>
-                <p className='titles' style={{marginLeft: '5px'}}>ROUND</p>
+                <p className='titles' style={{marginLeft: '5px'}}>TIRADAS</p>
                 <img className='images' src={gambleRound} alt='' style={{margin: '5px'}} />
               </div>
             </div>
@@ -173,11 +173,11 @@ const RoundThree = ({players, setPlayers, setRound}) => {
                 <p className='modalTitle'>INGRESA TU BALANCE POSTERIOR</p>
                 <div style={{ display: 'flex' }}>
               <div style={{ position: 'relative' }}>
-                <p className='titles' style={{marginLeft: '5px'}}>GAMBLE</p>
+                <p className='titles' style={{marginLeft: '5px'}}>JUGADA</p>
                 <img className='images' src={gamble} alt='' style={{margin: '5px'}} />
               </div>
               <div style={{ position: 'relative' }}>
-                <p className='titles' style={{marginLeft: '5px'}}>ROUND</p>
+                <p className='titles' style={{marginLeft: '5px'}}>TIRADAS</p>
                 <img className='images' src={gambleRound} alt='' style={{margin: '5px'}} />
               </div>
             </div>

@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 import { useModal } from '../../modals/useModal'
 import './MobileRounds.css'
 import logo from '../../../assets/Logo.png'
-import challengeIMG from '../../../assets/Logo.png'
-import slotIMG from '../../../assets/Logo.png'
+import jugadaIMG from '../../../assets/jugada.png'
+import tiradaIMG from '../../../assets/tiradas.png'
 import MobileModals from '../../modals/MobileModals'
 
 const MobileRoundOne = ({players, setPlayers, setRound}) => {
@@ -106,10 +106,10 @@ const MobileRoundOne = ({players, setPlayers, setRound}) => {
           gamble === '' ?
           <div>
             <p className='mobileModalTitle'>GIRA PARA OBTENER LA APUESTA!</p>
-            <p className='mobileTitles'>GAMBLE</p>
-            <img className='mobileImages' src={challengeIMG} alt='' />
-            <p className='mobileTitles' style={{marginTop: '10px'}}>ROUND</p>
-            <img className='mobileImages' src={slotIMG} alt='' />
+            <p className='mobileTitles'>JUGADA</p>
+            <img className='mobileImages' src={jugadaIMG} alt='' />
+            <p className='mobileTitles' style={{marginTop: '10px'}}>TIRADAS</p>
+            <img className='mobileImages' src={tiradaIMG} alt='' />
             <div style={{textAlign: 'center'}}>
               { spinning ?
               <button disabled className='mobileSpinButton'>CARGANDO</button> : <button onClick={() => spinGamblesAndRounds()} className='mobileSpinButton'>GIRAR</button>
@@ -121,9 +121,9 @@ const MobileRoundOne = ({players, setPlayers, setRound}) => {
           gamble !== '' & spin ?
           <div>
             <p className='mobileModalTitle'>OBTUVISTE TU APUESTA!</p>
-            <p className='mobileTitles'>GAMBLE</p>
+            <p className='mobileTitles'>JUGADA</p>
             <img className='mobileImages' src={gamble} alt='' />
-            <p className='mobileTitles' style={{marginTop: '10px'}}>ROUND</p>
+            <p className='mobileTitles' style={{marginTop: '10px'}}>TIRADAS</p>
             <img className='mobileImages' src={gambleRound} alt='' />
             <div style={{textAlign: 'center'}}>
               <button onClick={() => setSpin(false)} className='mobileSpinButton'>SIGUIENTE</button>
@@ -139,11 +139,11 @@ const MobileRoundOne = ({players, setPlayers, setRound}) => {
                 <p className='mobileModalTitle'>INGRESA TU BALANCE ANTES DE JUGAR!</p>
                 <div style={{ display: 'flex' }}>
               <div style={{ position: 'relative' }}>
-                <p className='mobileTitles' style={{marginLeft: '5px'}}>GAMBLE</p>
+                <p className='mobileTitles' style={{marginLeft: '5px'}}>JUGADA</p>
                 <img className='mobileImages' src={gamble} alt='' style={{margin: '5px'}} />
               </div>
               <div style={{ position: 'relative' }}>
-                <p className='mobileTitles' style={{marginLeft: '5px'}}>ROUND</p>
+                <p className='mobileTitles' style={{marginLeft: '5px'}}>TIRADAS</p>
                 <img className='mobileImages' src={gambleRound} alt='' style={{margin: '5px'}} />
               </div>
             </div>
@@ -167,11 +167,11 @@ const MobileRoundOne = ({players, setPlayers, setRound}) => {
                 <p className='mobileModalTitle'>INGRESA TU BALANCE POSTERIOR</p>
                 <div style={{ display: 'flex' }}>
                   <div style={{ position: 'relative' }}>
-                    <p className='mobileTitles' style={{marginLeft: '5px'}}>GAMBLE</p>
+                    <p className='mobileTitles' style={{marginLeft: '5px'}}>JUGADA</p>
                     <img className='mobileImages' src={gamble} alt='' style={{margin: '5px'}} />
                   </div>
                   <div style={{ position: 'relative' }}>
-                    <p className='mobileTitles' style={{marginLeft: '5px'}}>ROUND</p>
+                    <p className='mobileTitles' style={{marginLeft: '5px'}}>TIRADAS</p>
                     <img className='mobileImages' src={gambleRound} alt='' style={{margin: '5px'}} />
                   </div>
                 </div>
