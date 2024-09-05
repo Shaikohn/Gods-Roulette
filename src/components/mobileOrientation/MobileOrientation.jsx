@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import './MobileOrientation.css';
-import { FcRotateToLandscape } from "react-icons/fc";
-import icon from '../../assets/Logo.png'
+import mobileOrientation from '../../assets/mobileOrientation.jpeg'
 
 const MobileOrientation = ({ children }) => {
   const [isPortrait, setIsPortrait] = useState(window.innerHeight > window.innerWidth);
@@ -24,7 +23,7 @@ const MobileOrientation = ({ children }) => {
         <div className="rotate-message">
           <p>Por favor, gira tu dispositivo a horizontal para continuar.</p>
           {/* <FcRotateToLandscape size={100} style={{marginTop: '20px'}} /> */}
-          <img src={icon} style={{height: '200px', width: '200px'}} />
+          <img src={mobileOrientation} style={{borderRadius: '5px', height: '200px', width: '200px'}} />
           <p>Corroborar que este desactivado el bloqueo de orientación de pantalla</p>
         </div>
       )}

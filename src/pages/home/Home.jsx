@@ -169,7 +169,7 @@ const Home = ({players, setPlayers}) => {
             </div>
           </div>
         </div> 
-        <p className='disclaimer'>Al clickear JUGAR estas aceptando que ni DeltaBet.xyz ni MagicIsland.app se haran cargo de tus perdidas o ganancias. Si no quieres perder $ , te recomendamos jugar en los slots de prueba</p>
+        <p className='disclaimer'>Al clickear JUGAR estas aceptando que ni DeltaBet.xyz ni God's Roulette se haran cargo de tus perdidas o ganancias. Si no quieres perder $ , te recomendamos jugar en los slots de prueba</p>
       </div>
       
     }
