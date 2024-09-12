@@ -103,7 +103,7 @@ const Home = ({players, setPlayers}) => {
       <div className='backgroundContainer'>
         <div className='logoContainer'>
           <img className='logo' src={logo} alt="" />
-          <p className='slogan'>RETA A TU AMIGO PARA DESCUBRIR QUIEN ES EL MAESTRO DE LOS SLOTS</p>
+          <p className='slogan'>RETA A TU AMIGO PARA DESCUBRIR QUIEN ES EL MAESTRO DE LA RULETA</p>
         </div>
         <div className='container'>
           <div className='playersContainer'>
@@ -162,14 +162,14 @@ const Home = ({players, setPlayers}) => {
             <button className='playButton' onClick={handleEditing}>JUGAR</button>
             </div>
             <div>
-              <button className='buttons'><a href='https://deltabet.xyz/instrucciones-magic-island' target='blank'>INSTRUCCIONES</a></button>
+              <button className='buttons'><a href='https://deltabet.xyz/instrucciones-gods-roulette' target='blank'>INSTRUCCIONES</a></button>
             </div>
             <div>
               <button className='buttons'><a href='https://deltabet.xyz/' target='blank'>MAS JUEGOS</a></button>
             </div>
           </div>
         </div> 
-        <p className='disclaimer'>Al clickear JUGAR estas aceptando que ni DeltaBet.xyz ni God's Roulette se haran cargo de tus perdidas o ganancias. Si no quieres perder $ , te recomendamos jugar en los slots de prueba</p>
+        <p className='disclaimer'>Al clickear JUGAR estas aceptando que ni DeltaBet.xyz ni God's Roulette se haran cargo de tus perdidas o ganancias. Si no quieres perder $ , te recomendamos jugar ruletas de prueba</p>
       </div>
       
     }

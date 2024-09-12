@@ -1,5 +1,4 @@
-/* import { Link } from 'react-router-dom' */
-/* import largeLogo from '../../images/others/largeLogo.png' */
+import largeLogo from '../../assets/largeLogo.png'
 import './Navbar.css'
 
 const NavBar = () => {
@@ -10,12 +9,12 @@ const NavBar = () => {
 
   return (
     <div>
-      {/* <div className='navBackground'>
+      <div className='navBackground'>
         <img className='navLogo' src={largeLogo} alt="" onClick={reloadButton} />
       </div>
       <div className='mobileNavBackground'>
         <img className='mobileNavLogo' src={largeLogo} alt="" onClick={reloadButton} />
-      </div> */}
+      </div>
     </div>
   )
 }
